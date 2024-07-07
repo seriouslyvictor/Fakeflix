@@ -115,3 +115,14 @@ carregarSeries();
 document
   .getElementById("menu--favoritos")
   .addEventListener("click", abrirFavoritos);
+
+function enableFlicker() {
+  const carosel = new Flickity("#container--series", {
+    cellAlign: "center",
+    watchCSS: true,
+    wrapAround: true,
+    percentPosition: false,
+  });
+}
+
+document.addEventListener("DOMContentLoaded", enableFlicker);

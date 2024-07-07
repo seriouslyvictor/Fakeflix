@@ -1,0 +1,29 @@
+@media (max-width: 53.125rem) {
+
+    .nav--primario ul,
+    .nav--secundario {
+        display: none;
+    }
+
+    section {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .flickity-viewport {
+        height: 25rem !important;
+    }
+
+    #container--series {
+        display: block;
+    }
+
+    #container--series article {
+        margin-right: 1.5rem;
+    }
+
+    #container--series:after {
+        content: 'flickity';
+    }
+}

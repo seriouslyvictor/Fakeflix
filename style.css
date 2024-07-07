@@ -20,11 +20,13 @@ header {
 
 header img {
     width: 5.75rem;
+    margin-right: 2.5rem;
 }
 
 
-.nav--primario ul,
-.nav--secundario {
+.nav--primario,
+.nav--secundario,
+ul {
     display: flex;
     gap: .9375rem;
     align-items: center;
@@ -34,10 +36,6 @@ li,
 .nav--secundario span {
     cursor: pointer;
     letter-spacing: 1px;
-}
-
-li:first-child {
-    margin-right: 2.5rem;
 }
 
 .container--sorteado {
@@ -71,6 +69,11 @@ section {
     flex-flow: wrap;
     justify-content: center;
     padding: 3.75rem;
+
+}
+
+#container--series:after {
+    content: '';
 }
 
 .series--card {
@@ -168,4 +171,8 @@ i {
 
 #favoritos img {
     width: 196px;
+}
+
+.flickity-page-dots .dot {
+    background-color: #e50914;
 }
